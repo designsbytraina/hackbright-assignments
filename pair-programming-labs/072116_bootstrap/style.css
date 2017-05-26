@@ -1,0 +1,25 @@
+.navbar {
+    background-color: #BCED91;
+
+}
+
+body {
+    background-color: #FFF5EE;
+}
+
+p {
+    text-align: center;
+}
+
+.row {
+    margin-bottom: 50px;
+}
+
+.icon_copy {
+    display: block;
+    text-align: center;
+}
+
+.header-section {
+    text-align: center;
+}

@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %}Compliment{% endblock %}
+{% block content %}
+    Hi {{ person }}! I think you're {{ compliment }}!
+    <form action="/game">
+        Do you want to play a game?
+        <input type="radio" name="play-game" value="yes" required>Yes
+        <input type="radio" name="play-game" value="no">No
+        <input type="submit" class="submit-button">
+    </form>
+{% endblock %}

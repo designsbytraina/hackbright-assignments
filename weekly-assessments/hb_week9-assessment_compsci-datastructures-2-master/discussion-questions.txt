@@ -1,0 +1,89 @@
+PART 1: DISCUSSION QUESTIONS
+----------------------------
+
+/////////
+RECURSION
+/////////
+
+1. In your own words, what is Recursion?
+
+a: A function that is designed to iterate through something by calling itself until it reaches a base case.
+
+2. Why is it necessary to have a Base Case?
+
+a: If a base case condition did not exist, then the function would continue to call itself indefinitely and would never return its result. This is highly memory intensive, as well.
+
+
+//////
+GRAPHS
+//////
+
+1. What is a Graph?
+
+a: A type of data model that is useful for modeling relationships between things. Graphs can either have directed of un-directed relationships.
+
+2. How is a Graph different from a Tree?
+
+a: Trees are a type of graph that has a directed relationship between items and are not cyclical, meaning it is best for defining relationships in a hierarchy.
+
+3. Give an example of something that would be good to model with a Graph.
+
+a: The relationship between user profiles on a social media site.
+
+
+///////////////////////////////////
+PERFORMANCE OF DIFF DATA STRUCTURES
+///////////////////////////////////
+
+1. Fill in the runtimes for the following actions for the table below:
+
+Data Structure         | Index   | Search | Add-R | Add-L | Pop-L | Pop-R
+-------------------------------------------------------------------------
+Python List            |  O(1)   |  O(n)  |  O(1) |  O(n) |  O(n) | O(1)
+Linked List            |  O(n)   |  O(n)  |  O(1) |  O(1) |  O(1) | O(n)
+Doubly-Linked List     |  O(n)   |  O(n)  |  O(1) |  O(1) |  O(1) | O(1)
+Queue (as array)       |   x     |    x   |  O(1) |   x   |  O(n) |   x
+Queue (as LL/DLL)      |   x     |    x   |  O(1) |   x   |  O(1) |   x
+Stack (as array/LL/DLL)|   x     |    x   |  O(1) |   x   |   x   | O(1)
+Deque (as DLL)         |   x     |    x   |  O(1) |  O(1) |  O(1) | O(1)
+
+
+2. Fill in Runtime and Memory:
+
+Data Structure        |    Get   |   Add   |  Delete  |  Iterate | Memory
+-------------------------------------------------------------------------
+Dictionary (Hash Map) |    O(1)  |   O(1)  |   O(1)   |   O(n)   | medium 
+Set (Hash Map)        |    O(1)  |   O(1)  |   O(1)   |   O(n)   | medium
+Binary Seach Tree     |  O(logn) |   O(n)  |   O(n)   |   O(1)   | little
+Tree                  |    O(n)  |   O(1)  |   O(1)   |   O(1)   | little
+
+
+///////
+SORTING
+///////
+
+1. Describe in words how the Bubble Sort algorithm works.
+
+a: Starting at the beginning of a list, the algorithm compares the first and second item. If the first item is smaller than the second, then it will stay in its position. If the second item is smaller than the first, then they will swap positions and the larger item will then be compared to the next item in the list. After the first loop, the largest item will bubble to lst[-1]. After the second, the next largest number will bubble to lst[-2]. This continues until all items have been sorted.
+
+2. Describe in words how the Merge Sort algorithm works.
+
+a: Starting with two pre-sorted lists and an empty results list, you compared the first element of each list, remove the smaller element, and add that element to the results list. You continue comparing elements from each list and appending items to the results list until the original two lists are empty.
+
+3. Describe in words how the Quick Sort algorithm works.
+
+a: Start by defining a pivot, which should be around the median value of the list being sorted, and partition the list into smaller values (on the left of the pivot) and larger values (on the right of the pivot). Using the pivot as a comparison value, iterate through positions and sort items into one of the paritions until all items have been compared. Then declare a new pivot value and continue to sort and declare pivots until all items are in their rightful places.
+
+
+/////////////
+GIT BRANCHING
+/////////////
+
+1. Give an instance when you would use git branching.
+
+a: If you want to begin working on a new feature, using production code but do not want to affect the production version of your product.
+
+2. What is a pull request?
+
+a: After working on a branch of code, a pull request is made to a project owner asking them to review the code and merge into another branch, typically to production/master.
+

@@ -1,0 +1,74 @@
+PART 1: DISCUSSION QUESTIONS
+----------------------------
+
+///////
+RUNTIME
+///////
+
+1. What determines the workload of figuring out whether your box of animal crackers contains an elephant?
+
+a: The amount of animal crackers in the box.
+
+2. Order the following runtimes in ascending order by efficiency as n approaches infinity:
+O(log n)
+O(n^2)
+O(n log n)
+O(n)
+O(2 ^ n)
+O(1)
+
+a: O(1), O(log n), O(n), O(n log n), O(n ^ 2), O(2 ^ n)
+
+
+///////////////
+STACKS & QUEUES
+///////////////
+
+1. In the following cases, would a stack or queue be a more appropriate data structure?
+
+- The process of loading and unloading pallets onto a flatbed truck
+a: stack
+
+- Putting bottle caps on bottles of beer as they roll down an assembly line
+a: queue
+
+- Calculating the solution to this mathematical expression: 2 + (7 * 4) - (3 / 2)
+a: queue
+
+
+////////////
+LINKED LISTS
+////////////
+
+1. Given the linked list below, which are the nodes? What is the data for each node? Where is the head? Where is the tail? (Please be as specific as possible — exactly which parts of the diagram correspond to each part? Arrows? Boxes? Text?)
+
+a: LLIST: head -> apple node ( apple.data="Apple", apple.next=berry )
+   LLIST: tail -> not declared attribute, but currently at cherry node
+   The arrows represent relationships moving from the head to the tail of the linked list.
+   The boxes represent each node and are divided by two attributes: node.data (left) is the string of data for the node, while node.next (right) is the node that comes next in the linked list.
+   The node at the end of the linked list points to None (by default) as no other items follow.
+
+2. What’s the difference between doubly- and singly-linked lists?
+
+a: Singly-linked lists have a head and each node has the attributes of data and next (or previous, but not both), denoting which node comes next in the list. Doubly-linked lists have a head and a tail to denote which items are at the beginning and the end of the list; each node also data and the attributes next and previous, denoting which item comes before and after it.
+
+3. Why is it faster to append to a linked list if we keep track of the tail as an attribute?
+
+a: In order to append an item to the list, we would only need to reassign the list's attribute for tail to point to the new item.
+
+
+/////
+TREES
+/////
+
+1. Given the tree above, in what order would a Breadth First Search (BFS) algorithm visit each node until finding burrito (starting at food)? Just list the order of nodes visited; no need to recreate the state of the algorithm data in your answer.
+
+a: [food, Italian, Indian, Mexican, lasagna, pizza, tikka masala, saag, burrito]
+
+2. Given the tree above, in what order would a Depth First Search (DFS) algorithm visit each node until finding Chicago-style (starting at food)? Just list the order of nodes visited; no need to recreate the state of the algorithm data in your answer.
+
+a: [food, Italian, pizza, Sicilian, New York-style, Chicago-style]
+
+3. How is a binary search tree different from other trees?
+
+a: When querying a binary tree, the amount of possibilities for each search are halved with each loop, yielding an O(log n) runtime as the search is minimized in scope. This is possible because the tree is designed to have data balanced on each side of the root, and all subsequent branches must also be balanced with no leaves reaching deeper than one level (in the hierarchy) from the others.

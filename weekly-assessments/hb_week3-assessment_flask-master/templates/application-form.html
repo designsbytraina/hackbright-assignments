@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+    <title>Join Team Ubermelon</title>
+    <link rel="stylesheet" type="text/css" href="../static/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <h1>Welcome to Ubermelon, where meloneering is our purpose.</h1>
+    <div id="instructions">
+        <p>Each day we strive to be the best meloneers in our class. If you think you've got the chops, then apply. We want only the best, i.e. any former employees of Squysh need not apply.</p>
+    </div>
+    <form name="job-application" action="/application" method="post">
+        <label for="first-name">First Name: </label><input type="text" name="first-name"><br><br>
+        <label for="last-name" class="last-name">Last Name: </label><input type="text" name="last-name" class="last-name"><br><br>
+        <label for="salary">Salary Requirement: </label><input type="text" name="salary"><br><br>
+        <select name="apply-role">
+            <option value="Software Engineer">Software Engineer</option>
+            <option value="QA Engineer">QA Engineer</option>
+            <option value="Product Manager">Product Manager</option>
+        </select><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

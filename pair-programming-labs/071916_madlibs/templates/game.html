@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %}Let's play!{% endblock %}
+{% block content %}
+    Yes, you are now playing Madlibs!<br>
+    <form action="/madlib">
+        Name a famous person? <input type="text" name="famous-person"><br>
+        What is your favorite color? <input type="text" name="color"><br>
+        Give me a noun: <input type="text" name="noun"><br>
+        Give me an adjective: <input type="text" name="adjective"><br>
+        Who is your heroine? <input type="text" name="heroine"><br>
+        What is your favorite food? <input type="text" name="food"><br>
+        Name a place you've visited: <input type="text" name="place"><br>
+        <input type="submit" class="submit-button">
+    </form>
+
+{% endblock %}

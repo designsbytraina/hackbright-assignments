@@ -1,0 +1,28 @@
+body {
+    background-color:#FFFFF0;
+}
+
+h1 {
+    margin: 25px 0 25px 0;
+    font-family: 'Poiret One', cursive;
+}
+
+#instructions {
+    border: 1px dashed #D9D919;
+    margin-bottom: 15px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+}
+
+form {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+}
+
+input, select {
+    background-color: #EEEB8D;
+}
+
+.last-name {
+    font-weight: 400; 
+}

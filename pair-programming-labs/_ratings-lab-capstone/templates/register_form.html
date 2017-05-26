@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+<!-- Prevent Default on form submission to do ajax call first -->
+<!-- Change value to placeholder in form -->
+
+    <form action="/register" method="POST">
+        <label for='email' class='register-label'>Email: <input type='text' name='email' placeholder='email' id='email' required autofocus></label><br>
+
+        <label for='password' class='register-label'>Password: <input type='text' name='password' placeholder='password' id='password' required></label><br>
+
+        <label for='age' class='register-label'>Age: <input type='text' name='age' placeholder='age' id='age' required></label><br>
+
+        <label for='zipcode' class='register-label'>Zipcode: <input type='text' name='zipcode' placeholder='zipcode' id='zipcode' required></label><br>
+
+        <input value"Submit" type="submit"></input>
+    </form>
+
+{% endblock %}
